@@ -1,3 +1,3 @@
-# Mod Magazine Website
+# MOD! Magazine Website
 
-The website of Mod Magazine.
+The website of MOD! Magazine, built with [Astro](https://astro.build).

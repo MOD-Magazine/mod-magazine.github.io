@@ -6,5 +6,6 @@ import sitemap from 'astro-sitemap';
 
 // https://astro.build/config
 export default defineConfig({
+	site: "https://mod-magazine.github.io",
 	integrations: [tailwind(), robotsTxt(), sitemap()]
 });
