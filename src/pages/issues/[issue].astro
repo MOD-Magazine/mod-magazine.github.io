@@ -1,0 +1,44 @@
+---
+import { readdirSync } from "fs";
+import type { GetStaticPathsResult } from "astro";
+
+interface Props {
+	issue: string;
+	path: string;
+}
+
+export function getStaticPaths(): GetStaticPathsResult {
+	// Read the /public/issues/raw/ directory and return a list of slugs
+	return readdirSync("./public/issues/raw/").map((file) => {
+		return {
+			params: {
+				issue: file
+			},
+			props: {
+				issue: file,
+				path: `/public/issues/raw/${file}`
+			}
+		};
+	});
+}
+
+const issue = Astro.props.issue;
+const path = Astro.props.path;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Downloading {issue}...</title>
+
+		<script data-goatcounter="https://mod.goatcounter.com/count" async src="//gc.zgo.at/count.js"
+		></script>
+
+		<script define:vars={{ path: path }}>
+			new Promise((resolve) => setTimeout(resolve, 750)).then(() => (window.location.href = path));
+		</script>
+	</head>
+
+	<body> Your download will begin shortly...</body>
+</html>
