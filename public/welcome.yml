@@ -55,10 +55,11 @@
   color: 0xFF00FF
 
   links:
+    Website: https://mod-magazine.github.io
+    Discord Invite: https://mod-magazine.github.io/discord
     GitHub Organization: https://github.com/MOD-Magazine
-    Magazine GitHub: https://github.com/MOD-Magazine/MOD-Magazine
-    Website GitHub: https://github.com/MOD-Magazine/MOD-Magazine.github.io
-    Discord Invite: https://discord.gg/9Dd7JBgVCS
+    Magazine Repository: https://github.com/MOD-Magazine/MOD-Magazine
+    Website Repository: https://github.com/MOD-Magazine/MOD-Magazine.github.io
 
 - type: threads
   mode: active
