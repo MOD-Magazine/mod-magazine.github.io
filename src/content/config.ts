@@ -9,7 +9,6 @@ export const collections = {
 				title: z.string(),
 				// This corresponds to the name of the author
 				author: z.string(),
-				tags: z.array(z.string()),
 				coverImage: image().optional()
 			})
 	}),
