@@ -57,7 +57,14 @@
   links:
     Website: https://mod-magazine.github.io
     Discord Invite: https://mod-magazine.github.io/discord
-    GitHub Organization: https://github.com/MOD-Magazine
+    Current Status: https://github.com/orgs/MOD-Magazine/projects/1
+    
+- type: links
+  title: GitHub Links
+  color: 0xFF00FF
+
+  links:
+    Organization: https://github.com/MOD-Magazine
     Magazine Repository: https://github.com/MOD-Magazine/MOD-Magazine
     Website Repository: https://github.com/MOD-Magazine/MOD-Magazine.github.io
 
